@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/Logo-Icon/logo.png">
+    <title>Register - Frawlsalla</title>
+    <link rel="stylesheet" href="CSS/styleRegister.css">
+    <link rel="stylesheet" href="CSS/HeaderFooterStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/MobileInterfaceScript.js"></script>
+    <script src="JS/Register.js" defer></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Assets/Logo-Icon/logo.png" idth="120px" height="120px;">
+        </div>
+    </div>
+
+    <div class="nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="screenshots.html">SCREENSHOTS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="characters.html">CHARACTERS</a></li>
+        <div class="navPlay">
+            <li><a id="Play" href="register.html">PLAY NOW</a></li>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="wrapper-content">
+            <div class="content-title">
+                <h1>Register Form</h1>
+            </div>
+            <form action="SuccessRegister.html" id="myForm">
+
+                <label>Name</label><br>
+                <input type="text" name="nameText"><br><br>
+
+                <label>Gender</label><br>
+                <td>
+                    <input type="radio" name="genderTxt" value="Male" id="male"> 
+                    <label for="Male">Male</label>
+                    <input type="radio" name="genderTxt" value="Female" id="female"> 
+                    <label for="Male">Female</label><br><br>
+                </td>
+                
+                <label >Email</label><br>
+                <input type="text" name="emailTxt"><br><br>
+
+                <label>Password</label><br>
+                <input type="password" name="passTxt"><br><br>
+
+                <label>Confirm Password</label><br>
+                <input type="password" name="confPassText"><br><br>
+
+                <input type="checkbox" name="agreeTxt" value="Agree to the terms and conditions" id="Terms"> 
+                <label>I agree to the term and conditions</label>
+
+                <br><br><td colspan="2">
+                    <p id="errorMessage"></p>
+                </td>
+          
+                <br><br><button type="submit" class="btn-submit" name="register">JOIN US</button>
+            
+              </form>
+        </div>    
+    </div>
+
+    <div class="footer">
+        <div class="footer-left">
+            Frawshalla
+        </div>
+        <div class="footer-right">
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="Assets/Logo-Icon/facebook.png" alt=" ">
+                </a>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="Assets/Logo-Icon/instagram.png" alt=" ">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

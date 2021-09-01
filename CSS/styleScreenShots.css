@@ -1,0 +1,109 @@
+html {
+    min-height: 100%;
+    background-image: url("../Assets/SS/Arena.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.content-title {
+    background-color: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.upper-content-title p {
+    margin-right: 20%;
+    margin-left: 7%;
+    padding: 50px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.content .upper-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .upper-content .upper-content-video {
+    width: 600px;
+    margin-right: 4%;
+}
+
+.content .upper-content .upper-content-video video {
+    border-radius: 10px;
+}
+
+.content .upper-content .upper-content-video video {
+    width: 100%;
+}
+
+.content .lower-content .conntainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.content .lower-content .conntainer img {
+    width: 85%;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.content .lower-content .conntainer img:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 800px) {
+    .upper-content-title p {
+        margin-right: -20%;
+        margin-left: -20%;
+    }
+    .content .upper-content {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .content .upper-content .upper-content-title {
+        width: 100%;
+        margin: 0;
+        padding: 0 35px;
+        height: 100%;
+        text-align: justify;
+    }
+    .content .upper-content .upper-content-video {
+        padding: 0 35px;
+        width: 100%;
+    }
+    .content .lower-content .conntainer {
+        margin-top: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content .lower-content .conntainer img {
+        margin-top: 30px;
+        width: 70%;
+    }
+    .content::before {
+        background-image: none;
+    }
+}

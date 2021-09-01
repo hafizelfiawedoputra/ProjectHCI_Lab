@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/Logo-Icon/logo.png">
+    <title>Frawlsalla</title>
+    <link rel="stylesheet" href="CSS/styleHome.css">
+    <link rel="stylesheet" href="CSS/HeaderFooterStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="JS/jquery-3.5.1.min.js"></script>
+    <script src="JS/Image-Slider.js"></script>
+    <script src="JS/Home.js" defer></script>
+</head>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Assets/Logo-Icon/logo.png" idth="120px" height="120px;">
+        </div>
+    </div>
+
+    <div class="nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="screenshots.html">SCREENSHOTS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="characters.html">CHARACTERS</a></li>
+        <div class="navPlay">
+            <li><a id="Play" href="register.html">PLAY NOW</a></li>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-container">
+            <a href="events.html"><img class="slide" src="Assets/Event/EVENTBTS.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="events.html"><img class="slide" src="Assets/Event/EventHeatwave.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="events.html"><img class="slide" src="Assets/Event/EventWEEKLY.jpg"></a>
+        </div>
+
+        <div class="dot-container">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="lower">
+            <div class="lower-title">
+                Recent News
+            </div>
+            <div class="component-container">
+                <div class="component">
+                    <div class="upper">
+                        <div class="upper-left">
+                            <div class="img1"><br>
+                                <img src="Assets/Gameplay/BrawlhallaGPCastle.jpg">
+                            </div>
+                            <div class="text1">
+                                Over 40 characters to those from Frawshalla and each characters will have unique movesets, abilities, stats, and weapons to suit your personal playstyle. You can use all characters and become a legend.
+                            </div>
+                        </div>
+                        <div class="upper-right">
+                            <div class="img2"><br>
+                                <img src="Assets/Gameplay/BrawlhallaGPJungle.jpg">
+                            </div>
+                            <div class="text2">
+                                You can play with friends for all matches in online or offline mode, you can also make a team for tag battles and earn the highest rank. Make yourself a true legend by playing this game.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-left ">
+            Frawshalla
+        </div>
+        <div class="footer-right">
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="Assets/Logo-Icon/facebook.png" alt=" ">
+                </a>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="Assets/Logo-Icon/instagram.png" alt=" ">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.banner-container').slick({
+                autoplay: true,
+                autoplaySpeed: 2500,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
